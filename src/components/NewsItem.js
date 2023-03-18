@@ -7,7 +7,7 @@ export class NewsItem extends Component {
         return (
             <div>
                 <div className="card" style={{width: "18rem"}}>
-                    <img src={imageUrl} className="card-img-top" alt="..."/>
+                    <img src={!imageUrl?"https://www.devdiscourse.com/remote.axd?https://devdiscourse.blob.core.windows.net/imagegallery/29_02_2020_17_00_20_7172535.jpg?width=920&format=jpeg":imageUrl} className="card-img-top" alt="..."/>
                         <div className="card-body">
                             <h5 className="card-title">{title}...</h5>
                             <p className="card-text">{description}...</p>
